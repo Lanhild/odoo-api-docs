@@ -1,114 +1,72 @@
-# Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
-
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to
-# deal in the Software without restriction, including without limitation the
-# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
-# sell copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
-# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
-# IN THE SOFTWARE.
-
-# Project information
-site_name: Odoo HTTP API Reference
-site_url: https://lanhild.github.io/odoo-http-docs
+# Project metadata
+site_name: Odoo API Reference
+site_url: https://lanhild.github.io/odoo-jsonrpc
 site_author: Lanhild
 site_description: >-
-  Unofficial Odoo JSON-RPC HTTP API documentation
+  Unofficial Odoo JSON-RPC HTTP API documentation made by @Lanhild for konvergo.com and the community.
+repo_name: konvergo-apps/odoo-jsonrpc
+repo_url: https://github.com/konvergo-apps/odoo-jsonrpc
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2023 by @Lanhild for Konvergo
 
-# Repository
-repo_name: Lanhild/odoo-http-docs
-repo_url: https://github.com/Lanhild/odoo-http-docs
-
-# Configuration
+# Theme configuration
 theme:
+  font:
+    text: Be Vietnam Pro
+    code: MesloLGS NF
+  
+  favicon: images/favicon.png
+
+  logo: images/logo.svg
+
+  icon:
+    repo: fontawesome/brands/github
+  
   name: material
-  custom_dir: material/.overrides
+
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
   features:
     - announce.dismiss
     - content.action.edit
     - content.action.view
     - content.code.annotate
     - content.code.copy
-    # - content.code.select
-    # - content.tabs.link
     - content.tooltips
-    # - header.autohide
-    # - navigation.expand
     - navigation.footer
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
+    - navigation.path
     - navigation.sections
-    - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
-  palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  favicon: assets/favicon.png
-  icon:
-    logo: logo
 
 # Plugins
 plugins:
   - search:
+      lang: en
       separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-  - minify:
-      minify_html: true
-
-# Hooks
-hooks:
-  - material/.overrides/hooks/translations.py
+  
+  - git-revision-date-localized:
+      type: timeago
 
 # Customization
 extra:
+  generator: false
   annotate:
     json: [.s2]
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/squidfunk
-    - icon: fontawesome/brands/gitter
-      link: https://gitter.im/squidfunk/mkdocs-material
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    - icon: fontawesome/brands/python
-      link: https://pypi.org/project/mkdocs-material/
-    - icon: fontawesome/brands/mastodon
-      link: https://fosstodon.org/@squidfunk
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
+      link: https://github.com/konvergo-apps
+      name: Konvergo on Github
+    - icon: material/web
+      link: https://konvergo.com
 
 # Extensions
 markdown_extensions:
@@ -120,37 +78,6 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  - pymdownx.arithmatex:
-      generic: true
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:materialx.emoji.to_svg
-      emoji_index: !!python/name:materialx.emoji.twemoji
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.keys
-  - pymdownx.magiclink:
-      repo_url_shorthand: true
-      user: squidfunk
-      repo: mkdocs-material
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
 
 # Page tree
 nav:
@@ -234,3 +161,5 @@ nav:
       - blog/posts/the-past-present-and-future.md
       - blog/posts/excluding-content-from-search.md
       - blog/posts/search-better-faster-smaller.md
+extra_css:
+  - stylesheets/extra.css

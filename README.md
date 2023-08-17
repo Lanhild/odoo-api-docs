@@ -1,6 +1,6 @@
 # Odoo JSON-RPC
 
-Unofficial Odoo JSON-RPC API documentation. Made by [@Lanhild](https://github.com/Lanhild) from scratch.
+Unofficial Odoo JSON-RPC API documentation. Made by [@Lanhild](https://github.com/Lanhild) for [konvergo.com](https://konvergo.com) and the community.
 
 ## Automation
 
