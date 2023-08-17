@@ -1,14 +1,14 @@
 # Important information to get started
 
-## Instance connection
+## Prerequisites
 
-To connect to an instance, you need:
+In order to achieve a connection with a database, you need the following:
 
 - An instance URI - for example; `https://odoo.example.com`
 - An available database
 - A valid user email and password combination
 
-The `POST` URL used for each request uses a format like `https://odoo.example.com/jsonrpc`.
+This API only has one endpoint `/jsonrpc`.
 
 ## Common request payload
 

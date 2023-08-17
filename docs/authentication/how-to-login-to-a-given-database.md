@@ -1,6 +1,6 @@
 # Login to a given database
 
-## Request params
+## Request parameters
 
 In order to login to an Odoo instance, the following params should be used
 
@@ -14,9 +14,9 @@ In order to login to an Odoo instance, the following params should be used
 "service": "common",
 "method": "login",
 "args": [
-  "database",
-  "your.user@example.com",
-  "passwd"
+  "<database>",
+  "<your.user@example.com>",
+  "<passwd>"
 ]
 ```
 
@@ -30,6 +30,6 @@ In order to login to an Odoo instance, the following params should be used
 }
 ```
 
-The field `result` contains the user ID (`uid`) of the email used as a parameter.
+The field `result` contains the UID of the email used as a parameter.
 
 This integer can then be used to authenticate requests made to an instance.
