@@ -1,13 +1,13 @@
 # Project metadata
 site_name: Odoo API Reference
-site_url: https://lanhild.github.io/odoo-jsonrpc
+site_url: https://lanhild.github.io/odoo-api-docs
 site_author: Lanhild
 site_description: >-
   Unofficial Odoo JSON-RPC HTTP API documentation made by @Lanhild for konvergo.com and the community.
-repo_name: konvergo-apps/odoo-jsonrpc
-repo_url: https://github.com/konvergo-apps/odoo-jsonrpc
+repo_name: konvergo-apps/odoo-api-docs
+repo_url: https://github.com/konvergo-apps/odoo-api-docs
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2023 by @Lanhild for Konvergo
+copyright: Copyright &copy; 2023 by @Lanhild for Konvergo. Community-driven documentation.
 
 # Theme configuration
 theme:
@@ -73,25 +73,45 @@ markdown_extensions:
   - def_list
   - footnotes
   - md_in_html
-  - toc:
-      permalink: true
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
 
 # Page tree
 nav:
-  - Welcome: index.md
-  - Getting started:
-    - Common parameters: common/common-parameters-in-a-request.md
-    - Authentication:
-        - Login to a given database: authentication/how-to-login-to-a-given-database.md
-  - Requests:
-      - CRUD operations:
-          - Create a record: requests/create.md
-          - Read a record: requests/read.md
-          - Update a record: requests/update.md
-          - Delete a record: requests/delete.md
+  - Introduction: 
+    - index.md
+    - Getting started: starting.md
+    - Authentication: authentication.md
+  - Core Resources:
+    - CRUD Operations:
+        - Create: core/crud/create.md
+        - Delete: core/crud/delete.md
+        - Read: core/crud/read.md
+        - Search: core/crud/search.md
+        - Update: core/crud/update.md
+    - Database Actions:
+        - Create: core/database/create.md
+        - Drop: core/database/drop.md
+        - Dump: core/database/dump.md
+        - Duplicate: core/database/duplicate.md
+        - Restore: core/database/restore.md
+        - List: core/database/list.md
+        - Migrate: core/database/migrate.md
+        - Rename: core/database/rename.md
+        - Restore: core/database/restore.md
+    - Server Actions:
+        - Change admin password: core/server/change-admin-passwd.md
+        - Check database existence: core/server/db-exist.md
+        - Get server version: core/server/version.md
     
 extra_css:
   - stylesheets/extra.css
