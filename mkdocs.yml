@@ -3,11 +3,11 @@ site_name: Odoo API Reference
 site_url: https://lanhild.github.io/odoo-api-docs
 site_author: Lanhild
 site_description: >-
-  Unofficial Odoo JSON-RPC HTTP API documentation made by @Lanhild for konvergo.com and the community.
-repo_name: konvergo-apps/odoo-api-docs
-repo_url: https://github.com/konvergo-apps/odoo-api-docs
+  Unofficial Odoo JSON-RPC HTTP API documentation made by @Lanhild for the community.
+repo_name: Lanhild/odoo-api-docs
+repo_url: https://github.com/Lanhild/odoo-api-docs
 edit_uri: edit/main/docs/
-copyright: Copyright &copy; 2023 by @Lanhild for Konvergo. Community-driven documentation.
+copyright: Copyright &copy; 2023 by @Lanhild. Community-driven documentation.
 
 # Theme configuration
 theme:
