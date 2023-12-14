@@ -3,7 +3,7 @@
 !!! danger
     The super administrator password of the database manager is required to perform this operation.
 
-Migrates the *`db`* databases list by updating teh base module using the `migrate_database` method of the `db` service.
+Migrates the *`db`* databases list by updating the base module using the `migrate_database` method of the `db` service.
 
 ``` json title="Method"
 {

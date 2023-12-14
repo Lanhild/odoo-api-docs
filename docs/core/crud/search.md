@@ -1,6 +1,6 @@
 # Odoo Search Records
 
-Searching for records can be done using the `search_read` argument method of the `object` service.
+Searching for records can be done using the `search_read` argument method of the `object` service. The `offset` and `limit` parameters can be to retrieve a subset of the records matching the search criteria.
 
 ``` json title="Method"
 {
@@ -25,6 +25,8 @@ Searching for records can be done using the `search_read` argument method of the
       [
         "fields"
       ]
+      offset,
+      limit
     ]
   }
 }
@@ -49,15 +51,22 @@ Searches for records with the field *`field`* to compare with the value *`value`
       "search_read",
       [
         [
-        "country_id",
+        "country_id.code",
         "=",
-        38
+        "CA"
+        ],
+        [
+          "id_numbers.category_id",
+          "=",
+          6
         ]
       ],
       [
         "name",
         "country_id"
-      ]
+      ],
+      0,
+      2
     ]
   }
 }
@@ -81,14 +90,6 @@ Searches for records with the field *`field`* to compare with the value *`value`
     {
       "id": 1,
       "name": "My Company",
-      "country_id": [
-        38,
-        "Canada"
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Super Cool Company",
       "country_id": [
         38,
         "Canada"

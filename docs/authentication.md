@@ -67,6 +67,6 @@ Login to the *`db`* database using the *`email`* login and *`password`* password
 ```
 
 [^1]:
-    Starting from Odoo v.14.0, API keys can be used instead of the user password. As a common security practice, API keys should be used instead of passwords when available.
+    [Starting from Odoo v.14.0](https://www.odoo.com/documentation/14.0/developer/reference/external_api.html#api-keys), API keys can be used instead of the user password. As a common security practice, API keys should be used instead of passwords when available.
 [^2]:
     See [^1]
