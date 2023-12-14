@@ -6,4 +6,4 @@ This is an **unofficial** documentation of Odoo's JSON-RPC API. It has been init
 
 You can use this documentation as a reference point for any operation you wish to perform using the API of an Odoo instance.
 
-Contributions are welcome whether it's by making changes to the definition itself or by [submitting suggestions](https://github.com/Lanhild/odoo-jsonrpc).
+Contributions are welcome whether it's by making changes to the definition itself or by [submitting suggestions](https://github.com/Lanhild/odoo-api-docs).

@@ -97,6 +97,8 @@ nav:
         - Delete: core/crud/delete.md
         - Read: core/crud/read.md
         - Search: core/crud/search.md
+        - Search Count: core/crud/search-count.md
+        - Search Operators: core/crud/search-operators.md
         - Update: core/crud/update.md
     - Database Actions:
         - Create: core/database/create.md

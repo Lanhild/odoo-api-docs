@@ -1,6 +1,6 @@
 # Story
 
-The reason why this documentation exists is because Odoo doesn't provide any official specification or information for their HTTP API.
+The reason why this documentation exists is because Odoo doesn't provide any official specification or information for their HTTP API itself.
 
 ## Context and Usage
 
@@ -14,6 +14,7 @@ The following are potential use cases of the API that could apply to the common 
 
 - Software applications where using code libraries isn't possible
 - SaaS applications such as [n8n and it's Odoo node](https://github.com/n8n-io/n8n/tree/master/packages/nodes-base/nodes/Odoo)
+- Common testing or data filtering
 
 ### Resources
 
@@ -23,3 +24,4 @@ Useful links I came across while writing this documentation:
 - [Odoo - *Web Services*](https://www.odoo.com/documentation/16.0/developer/howtos/web_services.html?highlight=jsonrpc#json-rpc-library)
 - [Odoo - *External API*](https://www.odoo.com/documentation/16.0/developer/reference/external_api.html)
 - [OdooRPC's documentation *Python module documentation*](https://pythonhosted.org/OdooRPC)
+- [openobject-server 7.0 - *Source Code*](http://bazaar.launchpad.net/~openerp/openobject-server/7.0/view/head:/openerp/osv/orm.py#L2325)
